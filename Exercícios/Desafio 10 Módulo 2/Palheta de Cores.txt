@@ -1,0 +1,7 @@
+Palheta de Cores
+
+#00ABAD
+#00F6FA
+#61C6C7
+#3DF9FC
+#007D80

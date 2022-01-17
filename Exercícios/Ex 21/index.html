@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        body{
+            background-color: rgb(53, 121, 121);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a:visited{
+            color: purple; /* Se o site já foi visitado, ficará roxo */
+        }
+
+        a:active{
+            color: green; /* O site ficará verde no momento em que o link for clicado (momentâneo) */
+        }
+
+        a:hover{
+            color: yellow;
+        }
+
+        a::after{
+            content: ' ← ';
+        }
+
+        a::before{
+            content: ' → ';
+        }
+
+        a{
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .principal{
+            background-color: rgb(51, 107, 25);
+        }
+
+        /* 
+            Pseudo-class = Valor visual, modifica as tags e interage com o usuário
+            Pseudo-elementos = Adicionar conteúdos nos textos
+
+        */
+        
+    </style>
+</head>
+<body>
+    <h1>Links Personalizados</h1>
+    <p><a href="https://facebook.com" target="_blank" rel="external" class="principal">Facebook</a></p>
+    <p><a href="https://youtube.com" target="_blank" rel="external">Youtube</a></p>
+    <p><a href="https://twitch.com" target="_blank" rel="external">Twitch</a></p>
+</body>
+</html>

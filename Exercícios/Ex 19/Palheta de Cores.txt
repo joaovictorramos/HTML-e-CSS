@@ -1,0 +1,7 @@
+Palheta de Cores Utilizada
+
+#5E0080
+#DB74FF
+#BB00FF
+#661385
+#9600CC

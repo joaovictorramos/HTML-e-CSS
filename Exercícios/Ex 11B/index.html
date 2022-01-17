@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução HTML</title>
+</head>
+<body>
+    <h1>Imagens HTML</h1>
+    <p></p>
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/leite-p.jpg" type="image/jpeg">  
+        <!--Quando for que 750(ou 650), a imagem será pequena-->
+        <source media="(max-width: 1065px)" srcset="imagens/leite-m.jpg" type="image/jpeg">
+        <!--Quando for que 1050(ou 1065), a imagem será média-->
+        <img src="imagens/leite-g.jpg" alt="Leite (grande)">
+        <!--Quando for maior que 1050, a imagem será grande-->
+    </picture>
+    <br>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/Into the Depths (Sting) - Jingle Punks.mp3" type="audio/mpeg">
+        <source src="midia/Into the Depths (Sting) - Jingle Punks.ogg" type="audio/ogg">
+        <source src="midia/Into the Depths (Sting) - Jingle Punks.wav" type="audio/wav"> 
+        <p>O navegador não é compatível com o tipo de áudio disponível.</p>
+        <p><a href="midia/Into the Depths (Sting) - Jingle Punks.mp3"
+            download="Into the Depths (Sting) - Jingle Punks.mp3" type="audio/mpeg">Clique aqui</a> 
+            para baixar o arquivo em MP3.</p>
+    </audio>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais um exemplo</title>
+    <style>
+        body{
+            font-family: Arial, Verdana, sans-serif;
+        }
+
+        div > p{ /* <p> em função de <div> */
+            display: none; /* Desaparecerá (invisível) */
+        }
+
+        div:hover{ /* Quando passar o mouse em <div>... */
+            color: red; /* O texto ficará vermelho */
+        }
+
+        div:hover > p{ /* Quando passar o mouse em <div>, a tag p... */
+            display:block; /* Aparecerá */
+            background-color: red; /* Mudará de fundo */
+            color: white; /* Mudará a cor da fonte */
+            width: 300px; /* Alterará sua largura */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo 2</h1>
+    <br>
+    <div>
+        Passe o mouse aqui
+        <p>olá mundo</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>
